@@ -22,7 +22,7 @@ const Feelings = () => {
           <img src={Speaker} alt="text-to-speech" />
         </div>
       </div>
-      <h3 className="instruction">Pick your closest mood below</h3>
+      <h3 >Pick your closest mood below</h3>
       <div className="answer">
         <button className="answer__button">
           <img className="answer__image" src={Happy} alt="happy emoji" />
