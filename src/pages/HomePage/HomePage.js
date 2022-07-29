@@ -7,10 +7,12 @@ import Recommendations from "../../components/Recommendations/Recommendations";
 class HomePage extends React.Component {
   state = {
     selectedMood: "",
+    selectedResource: null,
     showEmojis: true,
     showSeverity: false,
     showSimpathyNote: false,
     showHowYouFeel: false,
+    showRecommendations: false,
   };
   handleSelectMood = (mood) => {
     this.setState({
@@ -31,8 +33,21 @@ class HomePage extends React.Component {
       this.setState({
         showSimpathyNote: false,
         showHowYouFeel: true,
+        showRecommendations: true,//While Muhammed works on the text input
       });
     }, 3000);
+  };
+
+  handleSelectResource = (resource) => {
+    this.setState({
+      selectedResource: resource,
+    });
+  };
+
+  handleSelectContinue = () => {
+    this.setState({
+      showRecommendations: false,
+    });
   };
 
   render() {
@@ -54,15 +69,21 @@ class HomePage extends React.Component {
             We are sad to hear you feel this way...
           </h1>
         )}
-        {
+        {/* {
           this.state.showHowYouFeel && (
             <div className="placeholder">Needs to be changed</div>
           )
           //Muhammad, here we need the user to enter their feelings and how they feel
           // I have a div as a placeholder
           //You can use the BigCard component as the container
-        }
-        {/* {this.state.showHowYouFeel && <Recommendations />} Juan will take care of this*/}
+        } */}
+        {this.state.showRecommendations && (
+          <Recommendations
+            selectedResource={this.state.selectedResource}
+            selectResource={this.handleSelectResource}
+            confirmResource={this.handleSelectContinue}
+          />
+        )}
       </article>
     );
   }
