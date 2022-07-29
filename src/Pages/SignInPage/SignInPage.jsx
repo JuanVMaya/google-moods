@@ -1,5 +1,6 @@
 import React from 'react';
 import "./SignInPage.scss";
+// import people from "../../assets/L";
 
 const SignInPage = () => {
     return (
