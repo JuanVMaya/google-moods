@@ -3,10 +3,9 @@ import Neutral from "../../assets/Neutral.svg";
 import Sad from "../../assets/Sad.svg";
 import Frustrated from "../../assets/Frustrated.svg";
 import Microphone from "../../assets/microphone.svg";
-import Speaker from "../../assets/speaker.svg";
 import ArrowBack from "../../assets/arrow_back_24px.svg";
-
 import "./Feelings.scss";
+
 const Feelings = () => {
   return (
     <section className="question-container">
@@ -19,7 +18,6 @@ const Feelings = () => {
         <h1 className="question__text">How are you feeling right now?</h1>
         <div>
           <img src={Microphone} alt="text-to-speech" />
-          <img src={Speaker} alt="text-to-speech" />
         </div>
       </div>
       <h3 >Pick your closest mood below</h3>
