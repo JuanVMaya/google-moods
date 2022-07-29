@@ -1,0 +1,48 @@
+@use "../../styles/partials/mixins";
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 40rem;
+  @include mixins.tablet {
+    padding: 1.5rem;
+  }
+}
+.question {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  &__back-button {
+    margin-right: 1rem;
+  }
+}
+.instruction {
+  padding: 1rem 0;
+}
+.answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @include mixins.tablet {
+    gap: 1rem;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__button {
+    min-width: 25%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixins.tablet {
+      min-width: 20%;
+    }
+  }
+}
