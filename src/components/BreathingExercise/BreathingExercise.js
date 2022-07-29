@@ -49,7 +49,7 @@ class BreathingExercise extends React.Component {
               disabled={this.state.breathingExerciseComplete ? false : true}
               onClick={this.props.finishBreathingExercise}
             >
-              Continue
+              Finish
             </button>
           </div>
         </div>

@@ -39,9 +39,15 @@ class HomePage extends React.Component {
       this.setState({
         showSimpathyNote: false,
         showHowYouFeel: true,
-        showRecommendations: true, //While Muhammed works on the text input
       });
     }, 3000);
+  };
+
+  handleFinishJournalEntry = () => {
+    this.setState({
+      showHowYouFeel: false,
+      showRecommendations: true,
+    });
   };
 
   handleSelectResource = (resource) => {
@@ -83,7 +89,9 @@ class HomePage extends React.Component {
             We are sad to hear you feel this way...
           </h1>
         )}
-        {this.state.showHowYouFeel && <FeelingBox />}
+        {this.state.showHowYouFeel && (
+          <FeelingBox finishJournalEntry={this.handleFinishJournalEntry} />
+        )}
         {this.state.showRecommendations && (
           <Recommendations
             selectedResource={this.state.selectedResource}

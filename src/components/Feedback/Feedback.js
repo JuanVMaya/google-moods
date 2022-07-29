@@ -24,7 +24,7 @@ const Feedback = () => {
       <div className="feedback__bottom">
         <img src={Speaker} alt="read aloud" />
         <div className="feedback__survey">
-          <h3>Overall, How Satisfied are you with Google Moods?</h3>
+          <h3>Overall, how satisfied are you with Google Moods?</h3>
           <img
             src={feedbackScale}
             alt="feedback scale 1. very satisfied 2. somewhat satisfied 3. neutral satisfied or dissatisfied 4. somewhat dissatisfied 5. very dissatisfied"
