@@ -44,20 +44,24 @@ input {
         justify-content: space-around;
     }
 
-    &__color--1 {
-        accent-color: variables.$Google-Yellow;
+    &__color {
+
+        &--1 {
+            accent-color: variables.$Google-Yellow;
+        }
+
+        &--2 {
+            accent-color: variables.$Google-Blue;
+        }
+
+        &--3 {
+            accent-color: variables.$Google-Green;
+        }
+
+        &--4 {
+            accent-color: variables.$Google-Red;
+        }
     }
 
-    &__color--2 {
-        accent-color: variables.$Google-Blue;
-    }
-
-    &__color--3 {
-        accent-color: variables.$Google-Green;
-    }
-
-    &__color--4 {
-        accent-color: variables.$Google-Red;
-    }
 
 }
