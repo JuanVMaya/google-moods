@@ -14,6 +14,11 @@ body {
   font-weight: 400;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  background-color: #c0bebe;
+}
+
 h1 {
   font-size: 1.75rem;
   line-height: 2.5rem;
@@ -37,4 +42,9 @@ p {
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 400;
+}
+a {
+  color: variables.$Google-Blue;
+  text-decoration: underline;
+  font-size: 1rem;
 }
