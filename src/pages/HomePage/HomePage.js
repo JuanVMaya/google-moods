@@ -1,8 +1,9 @@
+import React from "react";
 import Feelings from "../../components/Feelings/Feelings";
 import FeelingRange from "../../components/FeelingRange/FeelingRange";
 import Recommendations from "../../components/Recommendations/Recommendations";
 import BreathingExercise from "../../components/BreathingExercise/BreathingExercise";
-import React from "react";
+import GoogleHome from "../../components/GoogleHome/GoogleHome";
 import "./HomePage.scss";
 
 class HomePage extends React.Component {
@@ -63,7 +64,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <article className="homepage">
-        <h1>Search Bar</h1>
+        <GoogleHome selectedMood={this.state.selectedMood} />
         {this.state.showEmojis && (
           <Feelings
             selectMood={this.handleSelectMood}

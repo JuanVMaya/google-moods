@@ -22,11 +22,11 @@ const Feelings = ({ selectMood, mood, showSeverity }) => {
         ) : (
           <div className="question__spacer"></div>
         )}
+        <h1 className="question__text">How are you feeling right now?</h1>
         <div className="question__alternate-input">
           <img src={Microphone} alt="text-to-speech" />
         </div>
       </div>
-      <h3>Pick your closest mood below</h3>
       <div className="answer">
         <button className="answer__button" onClick={handleSelectMood}>
           <img
