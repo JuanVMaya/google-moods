@@ -4,6 +4,7 @@ import React from "react";
 import "./HomePage.scss";
 import Recommendations from "../../components/Recommendations/Recommendations";
 import GoogleHome from "../../components/GoogleHome/GoogleHome";
+import FeelingBox from "../../components/FeelingBox/FeelingBox";
 
 class HomePage extends React.Component {
   state = {
@@ -59,7 +60,8 @@ class HomePage extends React.Component {
         )}
         {
           this.state.showHowYouFeel && (
-            <div className="placeholder">Needs to be changed</div>
+            // <div className="placeholder">Needs to be changed</div>
+            <FeelingBox/>
           )
           //Muhammad, here we need the user to enter their feelings and how they feel
           // I have a div as a placeholder
