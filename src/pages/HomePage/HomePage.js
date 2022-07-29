@@ -1,8 +1,9 @@
 import Feelings from "../../components/Feelings/Feelings";
 import FeelingRange from "../../components/FeelingRange/FeelingRange";
+import Recommendations from "../../components/Recommendations/Recommendations";
+import BreathingExercise from "../../components/BreathingExercise/BreathingExercise";
 import React from "react";
 import "./HomePage.scss";
-import Recommendations from "../../components/Recommendations/Recommendations";
 
 class HomePage extends React.Component {
   state = {
@@ -13,6 +14,7 @@ class HomePage extends React.Component {
     showSimpathyNote: false,
     showHowYouFeel: false,
     showRecommendations: false,
+    showBreathingExercise: false,
   };
   handleSelectMood = (mood) => {
     this.setState({
@@ -33,7 +35,7 @@ class HomePage extends React.Component {
       this.setState({
         showSimpathyNote: false,
         showHowYouFeel: true,
-        showRecommendations: true,//While Muhammed works on the text input
+        showRecommendations: true, //While Muhammed works on the text input
       });
     }, 3000);
   };
@@ -47,6 +49,14 @@ class HomePage extends React.Component {
   handleSelectContinue = () => {
     this.setState({
       showRecommendations: false,
+      showBreathingExercise: true,
+    });
+  };
+
+  handleFinishBreathingExercise = () => {
+    this.setState({
+      showBreathingExercise: false,
+      //Next step set to true
     });
   };
 
@@ -82,6 +92,11 @@ class HomePage extends React.Component {
             selectedResource={this.state.selectedResource}
             selectResource={this.handleSelectResource}
             confirmResource={this.handleSelectContinue}
+          />
+        )}
+        {this.state.showBreathingExercise && (
+          <BreathingExercise
+            finishBreathingExercise={this.handleFinishBreathingExercise}
           />
         )}
       </article>

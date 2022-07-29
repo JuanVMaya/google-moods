@@ -14,7 +14,7 @@ body {
   font-weight: 400;
 }
 
-button:disabled{
+button:disabled {
   cursor: not-allowed;
   background-color: #c0bebe;
 }
@@ -42,4 +42,9 @@ p {
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 400;
+}
+a {
+  color: variables.$Google-Blue;
+  text-decoration: underline;
+  font-size: 1rem;
 }
