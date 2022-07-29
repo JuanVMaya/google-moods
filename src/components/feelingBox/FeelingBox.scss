@@ -1,0 +1,69 @@
+@use "../../styles/partials/variables";
+
+
+.box {
+    max-width: 54.875rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid variables.$Google-Dark-Grey;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px 1px rgba(61, 61, 61, 0.66);
+    padding: 2rem 3rem 0 3rem;
+
+   &__button {
+    background-color: white;
+    border: 1px solid variables.$Google-Light-Grey;
+   }
+
+   &__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+   }
+
+   &__subheader {
+    margin-bottom: 1rem;
+   }
+
+
+   &__text-area {
+    resize: none;
+    overflow: hidden;
+
+    height: 15rem;
+    font: inherit;
+
+    padding: 1rem;
+   }
+
+   &__bottom {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+
+   }
+
+   &__img {
+    position: relative;
+    top: 2.4rem;
+    right: 2.5rem;
+   }
+
+   &__text {
+    position: relative;
+    bottom: 2rem;
+   }
+
+   &__down-header {
+    font-size: 2rem;
+   }
+
+   &__desc {
+    width: 18rem;
+    font-size: 0.9rem;
+   }
+
+   &__container {
+    margin-left: 6rem;
+   }
+}

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Homepage from "./pages/HomePage/HomePage";
+import Homepage from "./Pages/HomePage/HomePage";
 import "./App.scss";
+
 
 function App() {
   return (
