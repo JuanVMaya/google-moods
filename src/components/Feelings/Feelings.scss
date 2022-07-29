@@ -5,11 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  max-width: 40rem;
-
-  @include mixins.tablet {
-    padding: 1.5rem;
-  }
+  max-width: 45rem;
 }
 .question {
   padding-top: 1rem;
@@ -19,6 +15,11 @@
   width: 100%;
   &__back-button {
     margin-right: 1rem;
+  }
+  &__alternate-input {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
   }
 }
 .answer {
