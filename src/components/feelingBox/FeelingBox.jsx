@@ -20,7 +20,7 @@ const FeelingBox = () => {
                         You are not alone!
                     </h3>
                     <p className='box__desc'>
-                        Other's like you struggle with the same frustrations.
+                        Others like you struggle with the same frustrations.
                     </p>
                 </div>
                 <div className='box__container'>
