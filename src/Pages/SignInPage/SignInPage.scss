@@ -14,6 +14,8 @@
     &__img {
         padding: 1vw;
         width: 20rem;
+
+        
     }
 
     
@@ -21,16 +23,17 @@
         display: flex;
         flex-direction: column;
 
-        border: 0.3vw solid gainsboro;
+        border: 0.3vw solid #E6E6E6;
         border-radius: 1.5vw;
         padding: 5vw 3vw 5vw 3vw;
 
         width: 50%;
     }
-
+‹
     &__sub-header {
+        font-size: 1.8vw;
         margin: 0;
-        font-size: 1.5vw;
+
     }
 
     &__header {
@@ -46,27 +49,30 @@
     &__input {
         padding: 2vw;
         margin: 1.5vw 0 1.5vw 0;
-        border: 0.25vw solid #4285F4;
+        margin: 0;
+        border: 0.3vw solid #4285F4;
         border-radius: 1vw;
     }
 
     &__label {
         color: #4285F4;
+        font-weight: 600;
         position: relative;
-        top: 2.5vw;
+        top: 1vw;
         left: 1.5vw;
         background-color: white;
         width: fit-content;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     &__forgot {
+        
         color: #4285F4;
-        margin-top: 0;
+        margin: 2vw 0 2vw 0;
     }
 
     &__outer-button {
-        width: 15vw;
+        width: 14vw;
         height: 5vw;
         background-color: #4285F4;
         display: flex;
@@ -87,6 +93,8 @@
 
     &__bottom-text {
         margin: 4vw 0 1vw 0;
+        font-size: 1.5vw;
+        font-weight: 600;
     }
 
     &__create-account {
