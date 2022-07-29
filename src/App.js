@@ -1,16 +1,21 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Homepage from '';
+import Homepage from './pages/HomePage/HomePage';
+import FeelingRange from './components/FeelingRange/FeelingRange';
 
 function App() {
   return (
 
-    <Router>
-      <Switch>
+    <FeelingRange />
 
-        <Route path="/" exact component={HomePage}> </Route>
-      </Switch>
-    </Router>
+
+
+    // <Router>
+    //   <Switch>
+
+    //     <Route path="/" exact component={HomePage}> </Route>
+    //   </Switch>
+    // </Router>
 
   );
 }

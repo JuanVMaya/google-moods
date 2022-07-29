@@ -1,0 +1,67 @@
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/global';
+@use '../../styles/partials/variables';
+
+
+label {
+    margin-left:calc( 50% - 20%);
+}
+
+p {
+    margin-top: 0.6rem;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+}
+
+.feeling-range {
+    margin: 0 1rem;
+    width: 90%;
+    border: 1px solid variables.$Google-Dark-Grey;
+    border-radius: 15px;
+
+    @include mixins.desktop {
+        margin: 0 2rem;
+    }
+
+    &__title {
+        font-weight: 400;
+        margin-top: 1rem;
+        color: variables.$Google-Black;
+        text-align: center;
+    }
+
+    &__radiobuttons{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 1rem;
+        color: variables.$Google-Black;
+    }
+
+    &__value {
+        justify-content: space-around;
+    }
+
+    &__color {
+
+        &--1 {
+            accent-color: variables.$Google-Yellow;
+        }
+
+        &--2 {
+            accent-color: variables.$Google-Blue;
+        }
+
+        &--3 {
+            accent-color: variables.$Google-Green;
+        }
+
+        &--4 {
+            accent-color: variables.$Google-Red;
+        }
+    }
+
+
+}
