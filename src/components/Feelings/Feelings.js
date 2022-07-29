@@ -6,7 +6,10 @@ import Microphone from "../../assets/microphone.svg";
 import ArrowBack from "../../assets/arrow_back_24px.svg";
 import "./Feelings.scss";
 
-const Feelings = () => {
+const Feelings = ({ selectMood, mood }) => {
+  const handleSelectMood = () => {
+    selectMood("Frustrated");
+  };
   return (
     <section className="question-container">
       <div className="question">
@@ -17,25 +20,57 @@ const Feelings = () => {
         />
         <h1 className="question__text">How are you feeling right now?</h1>
         <div className="question__alternate-input">
-          <img src={Microphone} alt="text-to-speech"    />
+          <img src={Microphone} alt="text-to-speech" />
         </div>
       </div>
-      <h3 >Pick your closest mood below</h3>
+      <h3>Pick your closest mood below</h3>
       <div className="answer">
-        <button className="answer__button">
-          <img className="answer__image" src={Happy} alt="happy emoji" />
+        <button className="answer__button" onClick={handleSelectMood}>
+          <img
+            className={`answer__image ${
+              mood === "Frustrated" || mood === "Neutral" || mood === "Sad"
+                ? "answer__image--unselected"
+                : ""
+            }`}
+            src={Happy}
+            alt="happy emoji"
+          />
           <p>Happy</p>
         </button>
-        <button className="answer__button">
-          <img className="answer__image" src={Neutral} alt="happy emoji" />
+        <button className="answer__button" onClick={handleSelectMood}>
+          <img
+            className={`answer__image ${
+              mood === "Frustrated" || mood === "Happy" || mood === "Sad"
+                ? "answer__image--unselected"
+                : ""
+            }`}
+            src={Neutral}
+            alt="happy emoji"
+          />
           <p>Neutral</p>
         </button>
-        <button className="answer__button">
-          <img className="answer__image" src={Sad} alt="happy emoji" />
+        <button className="answer__button" onClick={handleSelectMood}>
+          <img
+            className={`answer__image ${
+              mood === "Frustrated" || mood === "Happy" || mood === "Neutral"
+                ? "answer__image--unselected"
+                : ""
+            }`}
+            src={Sad}
+            alt="happy emoji"
+          />
           <p>Sad</p>
         </button>
-        <button className="answer__button">
-          <img className="answer__image" src={Frustrated} alt="happy emoji" />
+        <button className="answer__button" onClick={handleSelectMood}>
+          <img
+            className={`answer__image ${
+              mood === "Sad" || mood === "Happy" || mood === "Neutral"
+                ? "answer__image--unselected"
+                : ""
+            }`}
+            src={Frustrated}
+            alt="happy emoji"
+          />
           <p>Frustrated</p>
         </button>
       </div>

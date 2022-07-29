@@ -33,6 +33,11 @@
   }
   &__image {
     width: 100%;
+    opacity: 1;
+    &--unselected{
+        opacity: 0.5;
+        transition: 300ms ease-in-out;
+    }
   }
   &__button {
     min-width: 25%;
@@ -41,8 +46,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
     @include mixins.tablet {
       min-width: 20%;
     }
+    
   }
 }
