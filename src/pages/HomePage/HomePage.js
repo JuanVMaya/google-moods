@@ -5,7 +5,7 @@ import Recommendations from "../../components/Recommendations/Recommendations";
 import BreathingExercise from "../../components/BreathingExercise/BreathingExercise";
 import GoogleHome from "../../components/GoogleHome/GoogleHome";
 import Feedback from "../../components/Feedback/Feedback";
-import FeelingBox from "../../components/FeelingBox/FeelingBox";
+import FeelingBox from "../../components/feelingBox/FeelingBox";
 import "./HomePage.scss";
 
 class HomePage extends React.Component {
