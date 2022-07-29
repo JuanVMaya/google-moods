@@ -1,8 +1,6 @@
 import "./GoogleHome.scss";
 import GoogleLogo from '../../assets/Google-logo.svg';
-import SearchBar from '../../assets/search-bar.svg';
-import SearchIcon from '../../assets/search-icon.svg';
-import Microphone from '../../assets/microphone.svg';
+import { Link } from 'react-router-dom';
 
 function GoogleHome() {
     return (
@@ -13,6 +11,7 @@ function GoogleHome() {
                 <button className="google__search--button">Google Search</button>
                 <button className="google__search--button">I'm Feeling Lucky</button>
             </div>
+            <p className="google__offer" >Google offered in: <Link to="https://www.google.ca/">Français</Link> </p>
 
         </section >
 

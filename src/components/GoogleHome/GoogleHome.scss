@@ -4,7 +4,7 @@
 
 
 .google {
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
 
     &__logo {
         width: 60%;
@@ -69,7 +69,12 @@
             }
             
         }
+    }
 
-
+    &__offer {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 1.5rem;
+  
     }
 }
