@@ -16,6 +16,10 @@
   &__back-button {
     margin-right: 1rem;
   }
+  &__spacer {
+    width: 1.875rem;
+    margin-right: 1rem;
+  }
   &__alternate-input {
     margin-left: 1rem;
     display: flex;
@@ -34,9 +38,9 @@
   &__image {
     width: 100%;
     opacity: 1;
-    &--unselected{
-        opacity: 0.5;
-        transition: 300ms ease-in-out;
+    &--unselected {
+      opacity: 0.5;
+      transition: 500ms ease-in-out;
     }
   }
   &__button {
@@ -50,6 +54,5 @@
     @include mixins.tablet {
       min-width: 20%;
     }
-    
   }
 }

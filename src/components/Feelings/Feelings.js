@@ -6,18 +6,22 @@ import Microphone from "../../assets/microphone.svg";
 import ArrowBack from "../../assets/arrow_back_24px.svg";
 import "./Feelings.scss";
 
-const Feelings = ({ selectMood, mood }) => {
+const Feelings = ({ selectMood, mood, showSeverity }) => {
   const handleSelectMood = () => {
     selectMood("Frustrated");
   };
   return (
     <section className="question-container">
       <div className="question">
-        <img
-          className="question__back-button"
-          src={ArrowBack}
-          alt="back button"
-        />
+        {showSeverity ? (
+          <img
+            className="question__back-button"
+            src={ArrowBack}
+            alt="back button"
+          />
+        ) : (
+          <div className="question__spacer"></div>
+        )}
         <h1 className="question__text">How are you feeling right now?</h1>
         <div className="question__alternate-input">
           <img src={Microphone} alt="text-to-speech" />

@@ -1,6 +1,10 @@
 import "./FeelingRange.scss";
 
-function FeelingRange() {
+function FeelingRange({ selectSeverity }) {
+  const handleSelectSeverity = () => {
+    //Ideally we would pass a severity value
+    selectSeverity();
+  };
   return (
     <section className="feeling-range">
       <h1 className="feeling-range__title">What is the level of severity?</h1>
@@ -24,7 +28,7 @@ function FeelingRange() {
           ></input>
           <label for="radio-2">2</label>
         </div>
-        <div className="feeling-range__value">
+        <div className="feeling-range__value" onClick={handleSelectSeverity}>
           <input
             className="feeling-range__color--3"
             type="radio"

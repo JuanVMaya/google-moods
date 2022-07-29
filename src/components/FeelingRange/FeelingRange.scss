@@ -18,6 +18,7 @@ input {
 
   border: 1px solid variables.$Google-Dark-Grey;
   border-radius: 15px;
+  transition: 1.5s ease-in;
 
   @include mixins.desktop {
     padding: 1rem 4rem;
