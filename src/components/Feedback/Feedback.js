@@ -8,7 +8,7 @@ const Feedback = () => {
   return (
     <BigCard>
       <div className="feedback__top">
-        <h1>Breath is the link between mind & body</h1>
+        <h1>Each breath links the mind & body</h1>
         <h3>
           Practicing a simple exercise like this when you’re feeling frustrated
           can help you relax and improve your overall wellbeing.

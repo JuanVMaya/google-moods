@@ -18,8 +18,8 @@ class BreathingExercise extends React.Component {
         <div className="breathing__top">
           <h1>Breathing Exercise</h1>
           <h3>
-            Breathing exercises are a useful tool for achieving a relaxed clear
-            state of mind.
+            Breathing exercises are a useful tool for achieving a relaxed,
+            clear, state of mind.
           </h3>
         </div>
         <section className="breathing__middle">
@@ -32,7 +32,7 @@ class BreathingExercise extends React.Component {
         <div className="breathing__bottom">
           <div className="breathing__article-section">
             <p className="breathing__article-text">
-              Article on how these breathing excersises can help you:{" "}
+              Articles on how these breathing exercises can help you:{" "}
               <span>
                 <a href="https://www.health.harvard.edu/mind-and-mood/relaxation-techniques-breath-control-helps-quell-errant-stress-response">
                   Click here
