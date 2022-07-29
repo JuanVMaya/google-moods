@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/variables";
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  @include mixins.tablet {
+    margin: 1rem 3rem;
+  }
+}
+.sympathy-note {
+  margin-top: 2rem;
+  color: variables.$Google-Blue;
+  animation: flashing-animation 3s infinite;
+}
+.placeholder {
+  width: 100%;
+  background-color: blue;
+  height: 8rem;
+}
+@keyframes flashing-animation {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

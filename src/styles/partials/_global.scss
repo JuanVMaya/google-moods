@@ -1,17 +1,40 @@
-@use './fonts';
-@use './mixins';
-@use './variables';
+@use "./mixins";
+@use "./variables";
 
-
-  
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-  
+
 body {
-    margin: 0;
-   
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
-  
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  @include mixins.tablet {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}

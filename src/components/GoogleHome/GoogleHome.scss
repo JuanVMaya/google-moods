@@ -1,0 +1,80 @@
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables";
+
+
+.google {
+    margin: 2rem 0 1rem;
+
+    &__logo {
+        width: 60%;
+        display: block;
+        margin: auto;
+
+        @include mixins.desktop {
+            width: 80%;
+        }
+        
+    }
+
+    &__search {
+
+        &--bar {
+            background: url('../../assets/search-icon.svg') no-repeat 0.5rem;
+            width: 100%;
+            height: 1.7rem;
+            border-radius: 20px;
+            margin: auto;
+            display: block;
+            border: 1px solid variables.$Google-Light-Grey;
+            position: relative;
+            bottom: 1.5rem;
+            padding-left: 2rem;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+
+            @include mixins.desktop {
+                height: 1.9rem;
+                bottom: 2rem;
+            }
+        }
+
+
+        &--buttons {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 4rem;
+
+            @include mixins.desktop {
+                margin: 0 6rem;
+            }
+        }
+
+        &--button {
+            border: none;
+            padding: 0.5rem 0.8rem;
+            color: variables.$Google-Black;
+            background-color: variables.$Google-Lightest-Grey;
+            margin-left: 1rem;
+            border-radius: 5px;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+
+            @include mixins.desktop {
+                padding: 0.7rem 0.9rem;
+            }
+            
+        }
+    }
+
+    &__offer {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 1.5rem;
+  
+    }
+}

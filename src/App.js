@@ -1,26 +1,16 @@
-import logo from "./logo.svg";
-import { useState } from "react";
-import "./App.css";
-import { BrowserRouter, Switch, Route, useHistory  } from "react-router-dom";
-import LoginPage from "./Pages/SignInPage/SignInPage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Homepage from "./Pages/HomePage/HomePage";
+import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const handleCountUp = () => {
-    setCount(count - 1);
-  };
-
-
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
-        <Route
-          path="/login" exact component={LoginPage}
-        />
-
-
+        <Route path="/" exact component={Homepage}>
+          
+        </Route>
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 
   // return (

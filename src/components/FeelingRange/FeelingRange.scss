@@ -1,0 +1,64 @@
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables";
+
+p {
+  margin-top: 0.6rem;
+}
+
+input {
+  width: 20px;
+  height: 20px;
+}
+
+.feeling-range {
+  margin-top: 1rem;
+  padding: 1rem;
+  max-width: 45rem;
+
+  border: 1px solid variables.$Google-Dark-Grey;
+  border-radius: 15px;
+  transition: 1.5s ease-in;
+
+  @include mixins.desktop {
+    padding: 1rem 4rem;
+  }
+
+  &__title {
+    color: variables.$Google-Black;
+    text-align: center;
+  }
+
+  &__radiobuttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    color: variables.$Google-Black;
+  }
+
+  &__value {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__color {
+    &--1 {
+      accent-color: variables.$Google-Yellow;
+    }
+
+    &--2 {
+      accent-color: variables.$Google-Blue;
+    }
+
+    &--3 {
+      accent-color: variables.$Google-Green;
+    }
+
+    &--4 {
+      accent-color: variables.$Google-Red;
+    }
+  }
+}
