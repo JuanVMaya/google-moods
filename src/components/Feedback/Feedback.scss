@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/variables";
+
+.feedback {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    @include mixins.tablet {
+      width: 70%;
+    }
+  }
+  &__middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  &__moods-icons {
+    width: 100%;
+  }
+  &__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  &__survey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

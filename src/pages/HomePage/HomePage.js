@@ -5,6 +5,7 @@ import Recommendations from "../../components/Recommendations/Recommendations";
 import BreathingExercise from "../../components/BreathingExercise/BreathingExercise";
 import GoogleHome from "../../components/GoogleHome/GoogleHome";
 import "./HomePage.scss";
+import Feedback from "../../components/Feedback/Feedback";
 
 class HomePage extends React.Component {
   state = {
@@ -16,6 +17,7 @@ class HomePage extends React.Component {
     showHowYouFeel: false,
     showRecommendations: false,
     showBreathingExercise: false,
+    showFeedback: false,
   };
   handleSelectMood = (mood) => {
     this.setState({
@@ -57,7 +59,7 @@ class HomePage extends React.Component {
   handleFinishBreathingExercise = () => {
     this.setState({
       showBreathingExercise: false,
-      //Next step set to true
+      showFeedback: true,
     });
   };
 
@@ -100,6 +102,7 @@ class HomePage extends React.Component {
             finishBreathingExercise={this.handleFinishBreathingExercise}
           />
         )}
+        {this.state.showFeedback && <Feedback />}
       </article>
     );
   }
