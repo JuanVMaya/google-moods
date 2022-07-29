@@ -40,9 +40,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <article className="homepage">
-
         <GoogleHome />
-
         {this.state.showEmojis && (
           <Feelings
             selectMood={this.handleSelectMood}

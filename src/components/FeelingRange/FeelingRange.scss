@@ -9,14 +9,16 @@ p {
 input {
   width: 20px;
   height: 20px;
+
 }
+
 
 .feeling-range {
   margin-top: 1rem;
   padding: 1rem;
   max-width: 45rem;
-
-  border: 1px solid variables.$Google-Dark-Grey;
+  border: 1px solid variables.$Google-Light-Grey;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 15px;
   transition: 1.5s ease-in;
 
@@ -42,6 +44,38 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0.2rem;
+
+    &:hover {
+      border-radius: 20px;
+      color: white;
+      padding: 0.2rem;
+      opacity: 80%;
+    }
+
+    &--1 {
+      &:hover {
+        background-color: variables.$Google-Yellow;
+      }
+    }
+
+    &--2 {
+      &:hover {
+        background-color: variables.$Google-Blue;
+      }
+    }
+
+    &--3 {
+      &:hover {
+        background-color: variables.$Google-Green;
+      }
+    }
+
+    &--4 {
+      &:hover {
+        background-color: variables.$Google-Red;
+      }
+    }
   }
 
   &__color {
