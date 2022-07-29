@@ -4,8 +4,9 @@ import FeelingRange from "../../components/FeelingRange/FeelingRange";
 import Recommendations from "../../components/Recommendations/Recommendations";
 import BreathingExercise from "../../components/BreathingExercise/BreathingExercise";
 import GoogleHome from "../../components/GoogleHome/GoogleHome";
-import "./HomePage.scss";
 import Feedback from "../../components/Feedback/Feedback";
+import FeelingBox from "../../components/FeelingBox/FeelingBox";
+import "./HomePage.scss";
 
 class HomePage extends React.Component {
   state = {
@@ -82,14 +83,7 @@ class HomePage extends React.Component {
             We are sad to hear you feel this way...
           </h1>
         )}
-        {/* {
-          this.state.showHowYouFeel && (
-            <div className="placeholder">Needs to be changed</div>
-          )
-          //Muhammad, here we need the user to enter their feelings and how they feel
-          // I have a div as a placeholder
-          //You can use the BigCard component as the container
-        } */}
+        {this.state.showHowYouFeel && <FeelingBox />}
         {this.state.showRecommendations && (
           <Recommendations
             selectedResource={this.state.selectedResource}
