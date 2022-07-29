@@ -58,14 +58,12 @@ class HomePage extends React.Component {
         )}
         {
           this.state.showHowYouFeel && (
-            // <div className="placeholder">Needs to be changed</div>
+            
             <FeelingBox/>
           )
-          //Muhammad, here we need the user to enter their feelings and how they feel
-          // I have a div as a placeholder
-          //You can use the BigCard component as the container
+
         }
-        {/* {this.state.showHowYouFeel && <Recommendations />} Juan will take care of this*/}
+        
       </article>
     );
   }
