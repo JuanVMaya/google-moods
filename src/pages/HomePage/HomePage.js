@@ -14,6 +14,7 @@ class HomePage extends React.Component {
     selectedMood: "",
     selectedResource: null,
     showEmojis: true,
+    showDisclaimer: true,
     showSeverity: false,
     showSimpathyNote: false,
     showHowYouFeel: false,
@@ -33,6 +34,7 @@ class HomePage extends React.Component {
 
     this.setState({
       showEmojis: false,
+      showDisclaimer: false,
       showSeverity: false,
       showSimpathyNote: true,
     });
@@ -106,7 +108,7 @@ class HomePage extends React.Component {
           />
         )}
         {this.state.showFeedback && <Feedback />}
-        <Disclaimer />
+        {this.state.showDisclaimer && <Disclaimer />}
       </article>
     );
   }
