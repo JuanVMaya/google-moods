@@ -5,8 +5,9 @@ import Recommendations from "../../components/Recommendations/Recommendations";
 import BreathingExercise from "../../components/BreathingExercise/BreathingExercise";
 import GoogleHome from "../../components/GoogleHome/GoogleHome";
 import Feedback from "../../components/Feedback/Feedback";
-import FeelingBox from "../../components/feelingBox/FeelingBox";
+import FeelingBox from "../../components/FeelingBox/FeelingBox";
 import "./HomePage.scss";
+import Disclaimer from "../../components/Disclaimer/Disclaimer";
 
 class HomePage extends React.Component {
   state = {
@@ -105,6 +106,7 @@ class HomePage extends React.Component {
           />
         )}
         {this.state.showFeedback && <Feedback />}
+        <Disclaimer />
       </article>
     );
   }

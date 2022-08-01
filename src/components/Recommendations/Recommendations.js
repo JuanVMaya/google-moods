@@ -9,8 +9,8 @@ const Recommendations = ({
   confirmResource,
 }) => {
   const handleSelectResource = () => {
-    // This would be handled as one option for each onClick handler
-    selectResource(6); //Sets to 3 easy breathing exercises
+    // This would be handled as one option for each onClick handler for demo purposes
+    selectResource(6); //Sets "Easy breathing exercise"
   };
   return (
     <BigCard>
@@ -80,7 +80,7 @@ const Recommendations = ({
           }`}
           onClick={handleSelectResource}
         >
-          3 easy breathing exercises
+          Easy breathing exercise
         </button>
       </section>
       <div className="recommendations__bottom">
